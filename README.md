@@ -1,20 +1,14 @@
-# TESTING WITH RSPEC AND RAILS
-This project uses my [getting started project](https://github.com/gabrielcostasilva/rails-getting-started.git) as use case for carrying out BDD tests using RSpec with Rails.
+# USING FACTORYBOT FOR TESTING
+This project simplifies the process of creating test data for RSpec tests using FactoryBot. [_FactoryBot_](https://github.com/thoughtbot/factory_bot) is a library that allows to create test data in a more organized way. It is a replacement for the older FactoryGirl gem.
 
-> One can follow along the entire process by checking out each commit in this project.
+This project uses my [Rails RSpec project](https://github.com/gabrielcostasilva/rails-rspec-testing.git) as base for introducing FactoryBot.
+
+> Notice that we use `factory_bot_rails` gem rather than `factory_bot`.
 
 ## Project Overview
-To getting started, one can follow [rspec-rails instructions](https://github.com/rspec/rspec-rails). These instructions will help to setup the project and to create a very first test.
 
-In addition, you may want to mock objects, which we did in a [later commit](https://github.com/gabrielcostasilva/rails-rspec-testing/commit/4dcfeed6ec54b85c01ab1edf64a8396698b9731e).
 
 ## Additional References
-> Great getting started explanations in two parts: [Behaviour Driven Development in Ruby with RSpec](https://blog.appsignal.com/2024/01/24/behaviour-driven-development-in-ruby-with-rspec.html)
-- [RSpec Rails doc](https://rspec.info/features/7-0/rspec-rails/)
-- [RSpec official website](http://rspec.info)
-- [References for system testing](https://github.com/teamcapybara/capybara?tab=readme-ov-file)
-
-## Additional References for Mocking
-- [Official Github docs](https://github.com/rspec/rspec-mocks.git)
-- [Quickstart](https://semaphoreci.com/community/tutorials/mocking-with-rspec-doubles-and-expectations)
-- [Quick tips](https://rspec.info/features/3-12/rspec-mocks/basics/partial-test-doubles/)
+- [FactoryBot for Rails testing](https://www.honeybadger.io/blog/factorybot-for-rails-testing-md/) is a good introduction on using FactoryBot for Rails testing
+- [Working Effectively with Data Factories Using FactoryBot](https://semaphoreci.com/community/tutorials/working-effectively-with-data-factories-using-factorygirl) complements the previous article with more advanced configuration and usage topics
+- [FactoryBot documentation](https://thoughtbot.github.io/factory_bot/) helps to understand FactoryBot detailed usage
