@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Article, type: :model do
   context 'create' do
-    article = FactoryBot.create(:article)
+    article = FactoryBot.build_stubbed(:article)
 
     it 'is valid with valid attributes' do
       expect(article).to be_valid
@@ -16,7 +16,7 @@ RSpec.describe Article, type: :model do
 
   context 'visibility' do
     context 'private' do
-      article = FactoryBot.create(:article, :private)
+      article = FactoryBot.build_stubbed(:article, :private)
 
       it 'is private' do
         expect(article.status).to eq("private")
@@ -24,7 +24,7 @@ RSpec.describe Article, type: :model do
     end
 
     context 'archived' do
-      article = FactoryBot.create(:article, :archived)
+      article = FactoryBot.build_stubbed(:article, :archived)
 
       it 'is archived' do
         expect(article.status).to eq("archived")
